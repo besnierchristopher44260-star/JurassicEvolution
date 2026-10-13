@@ -68,7 +68,7 @@ var tick = (elapsedTime, multiplier) => {
 };
 
 var getPrimaryEquation = () => "\\dot{\\rho}=E\\cdot F\\cdot G^{" + (1 + 0.1 * dnaMilestone.level).toFixed(2) + "}\\cdot H^{" + (1 + 0.25 * parkMilestone.level).toFixed(2) + "}";
-var getSecondaryEquation = () => "\\text{Jurassic Evolution}\\qquad \\tau=\\max\\rho";
+var getSecondaryEquation = () => theory.latexSymbol + " = \\max\\rho";
 var getPublicationMultiplier = (tau) => tau.pow(0.16) / BigNumber.THREE;
 var getPublicationMultiplierFormula = (symbol) => "\\frac{" + symbol + "^{0.16}}{3}";
 var getTau = () => currency.value;
